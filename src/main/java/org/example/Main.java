@@ -31,7 +31,7 @@ public class Main {
             throw new IllegalArgumentException("Factorial of negative number is not defined.");
         }
         long fact = 1;
-        for (int i = 2; i <= x; i++) {
+        for (int i = 1; i <= x; i++) {
             fact *= i;
         }
         logger.info("Operation: Factorial, Input: " + x + ", Result: " + fact);
