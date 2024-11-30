@@ -1,5 +1,9 @@
 pipeline {
     agent any
+      environment {
+            LANG = 'en_US.UTF-8'
+            LC_ALL = 'en_US.UTF-8'
+        }
     stages {
         stage('Stage 1: Git Clone') {
             steps {
@@ -36,10 +40,6 @@ pipeline {
                     sh 'docker image prune -f'
                 }
             }
-        }
-        environment {
-            LANG = 'en_US.UTF-8'
-            LC_ALL = 'en_US.UTF-8'
         }
         stage('Step 6: Ansible Deployment') {
             steps {
