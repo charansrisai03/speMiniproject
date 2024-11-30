@@ -40,7 +40,7 @@ public class MainTest {
     @Test
     public void testPower_ValidInput() {
         double result = calculator.power(2, 3);
-        assertEquals(9.0, result, 0.0001);
+        assertEquals(8.0, result, 0.0001);
     }
 
     @Test
