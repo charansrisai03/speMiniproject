@@ -28,4 +28,4 @@
       ignore_errors: true
 
     - name: Run scientific calculator container
-      shell: docker run -it -d --name scientific_calculator charank0309/scientific_calculator
+      shell: docker run -it -d --name calculator charansrisai/calculator
