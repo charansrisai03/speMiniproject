@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Stage 1: Git Clone') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                 url: 'https://github.com/charansrisai03/speMiniproject.git'
             }
         }
